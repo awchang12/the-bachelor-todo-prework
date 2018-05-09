@@ -6,7 +6,7 @@ def get_first_name_of_season_winner(data, season)
       winner << contestant["name"]
     end
   end
-  return winner
+  return winner.split(" ")[0]
 end
 
 def get_contestant_name(data, occupation)
